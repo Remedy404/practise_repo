@@ -1,0 +1,38 @@
+Command: python3 -m unittest discover -v
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_answer_is_normalized (test_quiz.TestQuizGame.test_answer_is_normalized) ... ok
+test_answer_validation (test_quiz.TestQuizGame.test_answer_validation) ... ok
+test_question_has_explanation (test_quiz.TestQuizGame.test_question_has_explanation) ... ok
+test_question_has_four_options (test_quiz.TestQuizGame.test_question_has_four_options) ... ok
+test_question_has_valid_answer (test_quiz.TestQuizGame.test_question_has_valid_answer) ... ok
+test_questions_count (test_quiz.TestQuizGame.test_questions_count) ... ok
+test_results_display (test_quiz.TestQuizGame.test_results_display) ... ok
+test_answer_by_index (test_quiz_engine.TestQuizEngine.test_answer_by_index) ... ok
+test_check_answer_correct (test_quiz_engine.TestQuizEngine.test_check_answer_correct) ... ok
+test_check_answer_incorrect (test_quiz_engine.TestQuizEngine.test_check_answer_incorrect) ... ok
+test_explanation (test_quiz_engine.TestQuizEngine.test_explanation) ... ok
+test_feedback (test_quiz_engine.TestQuizEngine.test_feedback) ... ok
+test_invalid_answer_raises (test_quiz_engine.TestQuizEngine.test_invalid_answer_raises) ... ok
+test_percentage (test_quiz_engine.TestQuizEngine.test_percentage) ... ok
+test_public_questions (test_quiz_engine.TestQuizEngine.test_public_questions) ... ok
+test_question_structure (test_quiz_engine.TestQuizEngine.test_question_structure) ... ok
+test_questions_count (test_quiz_engine.TestQuizEngine.test_questions_count) ... ok
+test_quiz_results (test_quiz_engine.TestQuizEngine.test_quiz_results) ... ok
+test_valid_answers (test_quiz_engine.TestQuizEngine.test_valid_answers) ... ok
+test_wrong_answer (test_quiz_engine.TestQuizEngine.test_wrong_answer) ... ok
+test_zero_total_raises (test_quiz_engine.TestQuizEngine.test_zero_total_raises) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.002s
+
+OK
